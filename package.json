@@ -27,7 +27,7 @@
     "mocha": "^3.5.0",
     "mysql": "^2.15.0",
     "nodeify": "^1.0.1",
-    "pg": "^7.*",
+    "pg": "^7.4.2",
     "pg-hstore": "^2.x",
     "sequelize": "^4.x",
     "sqlite3": "^3.x",
