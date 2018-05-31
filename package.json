@@ -1,5 +1,5 @@
 {
-  "name": "sequelize-cli",
+  "name": "sequelize-cli-esm",
   "version": "4.0.0",
   "description": "The Sequelize CLI",
   "bin": {
