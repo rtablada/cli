@@ -1,4 +1,4 @@
-# rtablada/sequelize-cli-esm [![npm version](https://badge.fury.io/js/sequelize-cli-esm.svg)](https://badge.fury.io/js/sequelize-cli-esm) [![Build Status](https://travis-ci.org/rtablada/sequelize-cli-esm.svg?branch=master)](https://travis-ci.org/rtablada/sequelize-cli-esm)
+# sequelize-cli-esm [![npm version](https://badge.fury.io/js/sequelize-cli-esm.svg)](https://badge.fury.io/js/sequelize-cli-esm) [![Build Status](https://travis-ci.org/rtablada/sequelize-cli-esm.svg?branch=master)](https://travis-ci.org/rtablada/sequelize-cli-esm)
 
 The Sequelize Command Line Interface (CLI) with support for EcmaScript Modules (ESM)
 
