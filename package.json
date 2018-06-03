@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "description": "The Sequelize CLI",
   "bin": {
-    "sequelize": "./lib/sequelize"
+    "sequelize-esm": "./lib/sequelize"
   },
   "dependencies": {
     "bluebird": "^3.5.1",
