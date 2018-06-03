@@ -19,7 +19,7 @@ $ yarn global add sequelize-cli-esm
 Now you can run CLI using following command anywhere
 
 ```bash
-$ sequelize-esm
+$ sequelize-cli-esm
 ```
 
 ### Locally

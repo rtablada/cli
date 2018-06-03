@@ -214,7 +214,7 @@ Sequelize CLI continue to use schema from `v2` and fully compatible with `v2`. I
 Since v2.8.0 the CLI supports a adding timestamps to the schema for saving the executed migrations. You can opt-in for timestamps by running the following command:
 
 ```bash
-$ sequelize db:migrate:schema:timestamps:add
+$ sequelize-cli db:migrate:schema:timestamps:add
 ```
 
 ### The migration schema
