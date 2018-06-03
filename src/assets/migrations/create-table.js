@@ -1,8 +1,6 @@
-'use strict';
-
-module.exports = {
-  up: (queryInterface, Sequelize) => {
-    return queryInterface
+export default {
+  async up(queryInterface, Sequelize) {
+    return await queryInterface
       .createTable('<%= tableName %>', {
         id: {
           allowNull: false,
@@ -29,7 +27,7 @@ module.exports = {
       });
   },
 
-  down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('<%= tableName %>');
+  async down(queryInterface, Sequelize) {
+    return await queryInterface.dropTable('<%= tableName %>');
   }
 };

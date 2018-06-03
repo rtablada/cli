@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = (sequelize, DataTypes) => {
+const createModel = (sequelize, DataTypes) => {
   const <%= name %> = sequelize.define('<%= name %>', {
     <% attributes.forEach(function(attribute, index) { %>
       <%= attribute.fieldName %>: DataTypes.<%= attribute.dataFunction ? `${attribute.dataFunction.toUpperCase()}(DataTypes.${attribute.dataType.toUpperCase()})` : attribute.dataType.toUpperCase() %>
@@ -16,3 +14,5 @@ module.exports = (sequelize, DataTypes) => {
 
   return <%= name %>;
 };
+
+export default createModel;

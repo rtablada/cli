@@ -1,23 +1,21 @@
-'use strict';
-
-module.exports = {
-  up: (queryInterface, Sequelize) => {
+export default {
+  async up(queryInterface, Sequelize) {
     /*
       Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
+      Await any promises to handle asynchronicity.
 
       Example:
-      return queryInterface.createTable('users', { id: Sequelize.INTEGER });
+      return  await queryInterface.createTable('users', { id: Sequelize.INTEGER });
     */
   },
 
-  down: (queryInterface, Sequelize) => {
+  async down(queryInterface, Sequelize) {
     /*
       Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
+      Await any promises to handle asynchronicity.
 
       Example:
-      return queryInterface.dropTable('users');
+      return  await queryInterface.dropTable('users');
     */
   }
 };

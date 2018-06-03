@@ -1,26 +1,24 @@
-'use strict';
-
-module.exports = {
-  up: (queryInterface, Sequelize) => {
+export default {
+  async up(queryInterface, Sequelize) {
     /*
       Add altering commands here.
-      Return a promise to correctly handle asynchronicity.
+      Await any promises to handle asynchronicity.
 
       Example:
-      return queryInterface.bulkInsert('Person', [{
+      return await queryInterface.bulkInsert('Person', [{
         name: 'John Doe',
         isBetaMember: false
       }], {});
     */
   },
 
-  down: (queryInterface, Sequelize) => {
+  async down(queryInterface, Sequelize) {
     /*
       Add reverting commands here.
-      Return a promise to correctly handle asynchronicity.
+      Await any promises to handle asynchronicity.
 
       Example:
-      return queryInterface.bulkDelete('Person', null, {});
+      return await queryInterface.bulkDelete('Person', null, {});
     */
   }
 };
