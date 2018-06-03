@@ -58,7 +58,7 @@ export function _baseOptions (yargs) {
     })
     .option('esm', {
       describe: 'Use esm for ECMAScript Module support for config, migrations, etc',
-      default: false,
+      default: true,
       type: 'boolean'
     });
 }
