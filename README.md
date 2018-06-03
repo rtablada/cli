@@ -1,6 +1,6 @@
-# sequelize/cli [![npm version](https://badge.fury.io/js/sequelize-cli.svg)](https://badge.fury.io/js/sequelize-cli) [![Build Status](https://travis-ci.org/sequelize/cli.svg?branch=master)](https://travis-ci.org/sequelize/cli) [![Greenkeeper badge](https://badges.greenkeeper.io/sequelize/cli.svg)](https://greenkeeper.io/)
+# rtablada/cli [![npm version](https://badge.fury.io/js/sequelize-cli-esm.svg)](https://badge.fury.io/js/sequelize-cli-esm) [![Build Status](https://travis-ci.org/rtablada/cli.svg?branch=master)](https://travis-ci.org/rtablada/cli)
 
-The Sequelize Command Line Interface (CLI)
+The Sequelize Command Line Interface (CLI) with support for EcmaScript Modules (ESM)
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,26 +13,26 @@ The Sequelize Command Line Interface (CLI)
 Install CLI globally with
 
 ```bash
-$ npm install -g sequelize-cli
+$ yarn global add sequelize-cli-esm
 ```
 
 Now you can run CLI using following command anywhere
 
 ```bash
-$ sequelize
+$ sequelize-esm
 ```
 
 ### Locally
 Install CLI locally to your `node_modules` folder with
 
 ```bash
-$ npm install --save sequelize-cli
+$ yarn add sequelize-cli-esm
 ```
 
 You should be able to run CLI with
 
 ```bash
-$ node_modules/.bin/sequelize
+$ yarn sequelize-esm
 ```
 
 ### Usage
