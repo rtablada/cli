@@ -1,12 +1,15 @@
 import fs from 'fs';
 import yargs from 'yargs';
 import path from 'path';
+import esm from 'esm';
+
+const esmRequire = esm(module);
 
 function loadRCFile (optionsPath) {
   const rcFile = optionsPath || path.resolve(process.cwd(), '.sequelizerc');
   const rcFileResolved = path.resolve(rcFile);
   return fs.existsSync(rcFileResolved)
-    ? JSON.parse(JSON.stringify(require(rcFileResolved)))
+    ? JSON.parse(JSON.stringify(esmRequire(rcFileResolved)))
     : {};
 }
 
