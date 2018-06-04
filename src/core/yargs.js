@@ -1,23 +1,28 @@
 import fs from 'fs';
 import yargs from 'yargs';
 import path from 'path';
-import esm from 'esm';
-
-const esmRequire = esm(module);
+require = require('esm')(module);
 
 function loadRCFile (optionsPath) {
   const rcFile = optionsPath || path.resolve(process.cwd(), '.sequelizerc');
   const rcFileResolved = path.resolve(rcFile);
-  return fs.existsSync(rcFileResolved)
-    ? JSON.parse(JSON.stringify(esmRequire(rcFileResolved)))
-    : {};
+
+  const rcConfig = fs.existsSync(rcFileResolved) ? require(rcFileResolved) : {};
+  const config = rcConfig.default || rcConfig;
+
+  return JSON.parse(JSON.stringify(config));
 }
 
 const args = yargs
   .config(loadRCFile(yargs.argv.optionsPath));
 
 export default function getYArgs () {
-  return args;
+  const argv = args.argv;
+  argv.esm = argv.esm === undefined ? true : argv.esm;
+
+  return Object.assign({}, args, {
+    argv
+  });
 }
 
 export function _baseOptions (yargs) {
