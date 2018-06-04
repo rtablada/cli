@@ -67,7 +67,7 @@ const init = {
       helpers.asset.write(
         indexPath,
         helpers.template.render('models/index.js', {
-          configFile: '\'/' + relativeConfigPath + '\''
+          configFile: '\'' + relativeConfigPath + '\''
         }, {
           beautify: false
         })
